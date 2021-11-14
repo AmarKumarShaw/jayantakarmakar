@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration: none;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background-color: #23233b;
+    color:#fff;
+    font-size:1.2rem;
+}
+.header{
+    min-height:100vh;
+}
+
+a{
+    color:inherit;
+    font-size:inherit;
+    font-family:inherit;
+}
+
+h1{
+    font-size:4rem;
+}
+
+p{
+    line-height:2.1rem;
+}
+
+.small-title{
+    border-bottom: 2px solid #FE1A95;
+    display: inline-block;
+    font-weight:400;
+    padding-bottom:0.1rem
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height:10vh;
+    border-bottom:2px solid #2E344E;
+    background-color: #1D1D34;
+    padding:0 15rem;
+}
+
+.nav-items{
+    display: flex;
+}
+.nav-item{
+    margin:0 2rem;
+}
+
+/* Header Content Start Here  */
+
+.header-content{
+    min-height:90vh;
+    width:100%;
+    padding:0 15rem;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    background-image:url("../images/bg.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.left{
+    position:relative;
+}
+.left-content{
+    position:absolute;
+    top:10%;
+    left:0;
+    width:95%;
+}
+
+.left-content h1{
+    padding:1rem 0;
+}
+
+.left-content .btn{
+    background-color: #FE1A95;
+    color:inherit;
+    padding:0.8rem 1rem;
+    border-radius:25% 10%; 
+}
+
+.left-content .btn:hover{
+    background-color: #fff;
+    color:#FE1A95;
+    /* animation-name:bounce;
+    animation-duration:2s;  */
+    transition-duration:1.2s; 
+
+}
+.main-btn{
+    background-color: #FE1A95;
+    color:inherit;
+    padding:0.8rem 1rem;
+    border-radius:25% 10%; 
+}
+
+/* @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ }  */
+
+.right{
+    position:relative;
+}
+.right .hero{
+    position:absolute;
+    top:10%;
+    right:0;
+    width:97%;
+}
+
+.title{
+    text-align:center;
+}
+
+.title2{
+    position:relative;
+    padding-bottom:1.2rem;
+    display:inline-block
+}
+
+.title2::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:50%;
+    background-color: #FE1A95;
+    height:2px;
+    transform:translateX(-50%);
+}
+
+.featured-para{
+    width:60%;
+    text-align: center;
+    margin: 0 auto;
+    padding:3rem 0;
+    
+}
+
+.btn-con{
+    text-align: center;
+}
+
+/* Services  Section Starts Here  */
+
+
+.section {
+    padding:8rem 15rem;
+    background-color: #171a38;
+}
+
+/* =================Cards Css==============  */
+
+.card-con{
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns:repeat(auto-fill,minmax(350px,1fr));
+    grid-gap:3rem;
+    width:100%;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.card{
+    background-color: #fff;
+    color:#1D1D34;
+    border:1px solid #ccc; 
+    border-radius:20px;
+    box-shadow:5px 10px 15px rgb(0,0,0,0.5);
+    transition:all 0.4s ease-in-out;
+}
+.card:hover{
+    transform:translateY(-9px);
+    box-shadow:5px 15px 20px rgb(0,0,0,0.5)
+}
+
+.card-body{
+    padding:2rem 1.8rem;
+}
+.image {
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.image img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.image img:hover{
+    transform:scale(1.1)
+}
+.card-bottom{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card-btn{
+    border:2px solid #FE1A95;
+    padding:.5rem 2rem;
+    border-radius:30px;
+    color:#FE1A95;
+    display:inline-block;
+    transition:all 0.4s ease-in-out;
+    
+}
+.card-btn:hover{
+    background-color: #FE1A95;
+    color:#fff;
+}
+
+.card-title{
+    position:relative;
+    font-size:2.5rem;
+    display:inline-block;
+    padding-bottom:1.2rem;
+}
+.card-title::before{
+    content:"";
+    position:absolute;
+    height:2px;
+    background-color: #FE1A95;
+    width:70%;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%)
+}
+
+
+
+/* About Section Starts Here  */
+
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height:300px;
+    width:100%;
+}
+
+.about .left{
+    background-image:url("../images/course5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    background-size:cover;
+}
+
+.about .right{
+    display: flex;
+    padding:8rem 3rem;
+}
+
+.about-title,.about-featured-para{
+    padding:2rem 0;
+}
+.about-title{
+    position:relative;
+}
+
+.about-title::before{
+    position:absolute;
+    content:"";
+    background-color: #FE1A95;
+    height:2px;
+    bottom:0;
+    right:70%;
+    transform:translateY(-50%);
+    width:30%;
+
+}
+
+.about-btn .card-btn{
+    margin-right: 0.8rem;
+}
+
+
+/* End Section Starts Here  */
+
+footer{
+    min-height:200px;
+    padding:5rem 5rem;
+    background-color: #171a38;
+}
+.end-sections{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap:3rem;
+    place-items:center;
+}
+
+.end-heading{
+    text-align: center;
+    padding-bottom:1.2rem;
+    margin-bottom: 6rem;
+    font-size: 1.8rem;
+    position:relative;
+}
+.end-heading::before{
+    content:"";
+    position:absolute;
+    background-color: #FE1A95;
+    height:2px;
+    width:15%;
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
+}
+
+.end-left-content{
+    width:60%;
+}
+.end-right-content{
+    width:60%;
+}
+
+.end-featured-para,.address{
+    padding:1.2rem 0;
+}
+
+.copywright{
+    min-height:6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.2rem;
+    text-align: center; 
+   
+    width:100%;
+}
