@@ -22,7 +22,7 @@ a{
     font-family:inherit;
 }
 
-h1{
+.header-content h1{
     font-size:4rem;
 }
 
@@ -34,7 +34,8 @@ p{
     border-bottom: 2px solid #FE1A95;
     display: inline-block;
     font-weight:400;
-    padding-bottom:0.1rem
+    padding-bottom:0.1rem;
+    margin-bottom:4rem ;
 }
 
 .navigation{

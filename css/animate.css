@@ -1,0 +1,89 @@
+.hero{
+    animation: hero 5s infinite 0.4s ease-in-out;
+}
+.left-content h1{
+    animation:moveRight 1s ease-in-out;
+}
+
+.left-content a{
+    animation:moveRight2 1s 0.4s ease-in-out;
+    visibility:hidden;
+    opacity:1;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+}
+
+.left-content h4{
+    animation:OpacityAnim 1s 1s ease-in-out;
+    visibility:hidden;
+    opacity:1;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+}
+
+
+@keyframes hero{
+    0%{
+        transform:translateY(0) scale(1);
+    }
+    50%{
+        transform:translateY(-9px) scale(1.01) rotate(3deg);
+    }
+    100%{
+        transform:translateY(0) scale(1);
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    50%{
+        transform:translateX(15%);
+    }
+    70%{
+        transform:translateX(-21%)
+    }
+    85%{
+        transform:translateX(8%)
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes moveRight2{
+    0%{
+        transform:translateX(-100%);
+        opacity:0;
+        visibility:hidden;
+    }
+    50%{
+        transform:translateX(15%);
+    }
+    70%{
+        transform:translateX(-21%);
+    }
+    85%{
+        transform:translateX(8%)
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+        visibility:visible;
+    }
+
+}
+
+@keyframes OpacityAnim{
+    0%{
+        opacity:0;
+        visibility:hidden;
+    }
+    100%{
+        opacity:100%;
+        visibility:visible;
+    }
+}
